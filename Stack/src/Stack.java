@@ -30,7 +30,7 @@ public class Stack<T> {
         }
         T returnedVal = stack[counter];
         stack[counter] = null;
-        if(counter > 0 && counter <= stack.length/4)
+        if(counter > 0 && counter == stack.length/4)
             resize(stack.length / 2);
 
         return returnedVal;
