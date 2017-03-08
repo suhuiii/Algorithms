@@ -8,7 +8,7 @@ public class Selection implements Sort {
         for(int i = 0; i < a.length; i++){
             int minIndex = i;
             for(int j = i + 1; j < a.length; j++ ){
-                if(Sort.less(a[j], a[minIndex])){
+                if(Sort.lessThan(a[j], a[minIndex])){
                     minIndex = j;
                 }
             }

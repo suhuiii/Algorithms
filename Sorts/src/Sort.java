@@ -1,7 +1,7 @@
 public interface Sort {
     void sort(Comparable[] a);
 
-    static boolean less(Comparable a, Comparable b){
+    static boolean lessThan(Comparable a, Comparable b){
         return a.compareTo(b) < 0;
     }
 

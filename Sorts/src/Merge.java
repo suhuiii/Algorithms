@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 public class Merge implements Sort {
     static Comparable[] aux;
     @Override
@@ -27,7 +25,7 @@ public class Merge implements Sort {
                 a[k] = aux[j++];
             }else if(j > end){ //exhausted right half
                 a[k] = aux[i++];
-            }else if(Sort.less(aux[j], aux[i])){ //take from the right
+            }else if(Sort.lessThan(aux[j], aux[i])){ //take from the right
                 a[k] = aux[j++];
             }else{
                 a[k] = aux[i++];
